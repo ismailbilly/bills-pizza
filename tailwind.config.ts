@@ -9,10 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#f13a01",
+      },
+      backgroundImage: {
+        "orange-gradient":
+          "linear-gradient(to bottom, #CD885F 5%, #F1EBE0 95%)",
       },
     },
   },
-  plugins: [],
+ // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwindcss-motion")],
 } satisfies Config;
